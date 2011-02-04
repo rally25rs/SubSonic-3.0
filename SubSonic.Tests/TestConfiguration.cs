@@ -23,7 +23,8 @@ namespace SubSonic.Tests
         public const string MsSql2005TestConnectionString = @"server=.\SQLExpress;database=SubSonic;integrated security=true;";
         public const string MsSql2008TestConnectionString = @"server=.\SQL2008;database=SubSonic;integrated security=true;";
         public const string MySqlTestConnectionString = "server=localhost;database=subsonic;user id=root; password=;";
-        public const string OracleTestConnectionString = @"Data Source=Intest; User Id=commerx; Password=Franchise99";
+        public const string OracleTestConnectionString = @"Data Source=XE;User Id=SYSTEM;Password=sa";
+        public const string DB2TestConnectionString = @"Server=localhost:50000;Database=db2c_db2;User Id=DB2;Password=";
 
         public static string SQLiteTestsFilePath
         {

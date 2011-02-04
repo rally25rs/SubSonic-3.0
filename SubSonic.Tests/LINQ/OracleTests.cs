@@ -18,7 +18,7 @@ namespace SubSonic.Tests.Linq
      *   assembly which can also be obtained directly from Oracle.
      *   
      *  1) Install Oracle XE
-     *  2) Set SYSTEM account pwd to 'system' (or change the connection string in <see cref="TestConfiguration"/>)
+     *  2) Set SYSTEM account pwd to 'sa' (or change the connection string in <see cref="TestConfiguration"/>)
      *  3) Open Oracle XE web interface (http://127.0.0.1:8080/apex)
      *  4) Click the dropdown arrow on the "SQL" button, and choose: SQL Scripts | Upload
      *  5) Browse to and Upload: SubSonic\DbScripts\Northwind_Oracle.sql and Northwind_Oracle_Data.sql

@@ -32,6 +32,22 @@ SQLite
 ======
 Nothing, the DBs are included in the project as are the required assemblies (I <3 SQLite :)
 
+Oracle
+======
+  * Install Oracle XE
+  * Set SYSTEM account pwd to 'sa' (or change the connection string in <see cref="TestConfiguration"/>)
+  * Open Oracle XE web interface (http://127.0.0.1:8080/apex) and log in as SYSTEM/sa
+  * Click the dropdown arrow on the "SQL" button, and choose: SQL Scripts | Upload
+  * Browse to and Upload: SubSonic\DbScripts\Northwind_Oracle.sql and Northwind_Oracle_Data.sql
+  * Click on the uploaded Northwind_Oracle script to open script editor. Click "Run" button. Check results for errors.
+  * Click on the uploaded Northwind_Oracle_Data script to open script editor. Click "Run" button. Check results for errors.
+
+IBM DB2
+=======
+  * Install IBM DB2 Express-C
+  * (rest is TBD)
+
+
 Running the tests
 =================
 

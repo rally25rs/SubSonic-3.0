@@ -112,8 +112,13 @@
     <Compile Include="BugReports\TestRepositoryBugs.cs" />
     <Compile Include="BugReports\Update.cs" />
     <Compile Include="DbClientTypeName.cs" />
+    <Compile Include="LINQ\DB2Tests.cs" />
     <Compile Include="LINQ\OracleTests.cs" />
     <Compile Include="Repositories\AutoCollectionTests.cs" />
+    <Compile Include="Repositories\DB2SimpleRepositoryTests.cs" />
+    <Compile Include="Repositories\DB2AutoCollectionTests.cs" />
+    <Compile Include="Repositories\OracleSimpleRepositoryTests.cs" />
+    <Compile Include="Repositories\OracleAutoCollectionTests.cs" />
     <Compile Include="Repositories\SqlServerAutoCollectionTests.cs" />
     <Compile Include="Repositories\SQLiteAutoCollectionTests.cs" />
     <Compile Include="Repositories\MySQLAutoCollectionTests.cs" />
@@ -197,9 +202,7 @@
   <ItemGroup>
     <Content Include="ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Transactions\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
