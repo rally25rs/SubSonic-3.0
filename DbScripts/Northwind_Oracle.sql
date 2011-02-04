@@ -221,13 +221,10 @@ CREATE TABLE EmployeeTerritories (
 )
 /
 
-
-
 Alter table EmployeeTerritories
 add constraint FK_EmployeeTerritories_T FOREIGN KEY (TerritoryID) 
 REFERENCES territories (TerritoryID) ON DELETE cascade
 /
-
 
 -- Start of DDL Script for Table NWIND.EMPLOYEES
 -- Generated 19/01/07 19:41:30 from NWIND@INTELLIZ
@@ -485,28 +482,6 @@ ADD CONSTRAINT fk_orders FOREIGN KEY (customerid)
 REFERENCES customers (customerid)
 /
 
-CREATE TABLE employeeterritories 
-	(employeeid number(10,0) NOT NULL,
-	territoryid number(10,0) NOT NULL)
-  PCTFREE     10
-  INITRANS    2
-  MAXTRANS    255
-  TABLESPACE  users
-  STORAGE
-    (
-    INITIAL     65536
-    MINEXTENTS  1
-    MAXEXTENTS  2147483645
-    )
-/
-ALTER TABLE employeeterritories
-ADD CONSTRAINT fk1_employeeterritories FOREIGN KEY(employeeid)
-REFERENCES employees (employeeid)
-/
-ALTER TABLE employeeterritories
-ADD CONSTRAINT fk2_employeeterritories FOREIGN KEY (territoryid)
-REFERENCES territories (territoryid)
-/
 -- End of DDL script for Foreign Key(s)
 -- Start of DDL Script for Table NWIND.PRODUCTS
 -- Generated 19/01/07 19:41:31 from NWIND@INTELLIZ
