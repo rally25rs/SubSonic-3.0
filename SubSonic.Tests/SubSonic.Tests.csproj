@@ -166,6 +166,7 @@
     <Compile Include="TestClasses\OrderDetail.cs" />
     <Compile Include="TestClasses\Product.cs" />
     <Compile Include="TestConfiguration.cs" />
+    <Compile Include="Transactions\SharedConnectionScopeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
