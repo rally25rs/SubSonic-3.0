@@ -498,9 +498,11 @@ CREATE TABLE employeeterritories
     MINEXTENTS  1
     MAXEXTENTS  2147483645
     )
+/
 ALTER TABLE employeeterritories
 ADD CONSTRAINT fk1_employeeterritories FOREIGN KEY(employeeid)
 REFERENCES employees (employeeid)
+/
 ALTER TABLE employeeterritories
 ADD CONSTRAINT fk2_employeeterritories FOREIGN KEY (territoryid)
 REFERENCES territories (territoryid)
